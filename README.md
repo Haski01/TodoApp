@@ -35,9 +35,6 @@ Welcome to **TodoApp**! 🚀 This is a simple yet feature-rich task management a
 - **MongoDB**: For storing tasks and user data.
 
 ### Additional Libraries:
-- **Axios**: For making HTTP requests.
-- **Validator**: For handling server-side validation.
-- **Framer Motion**: For animations.
 - **EJS**: For server-side templating.
 - **Joi**: For schema-based data validation.
 - **Method-Override**: For supporting PUT and DELETE methods in forms.
@@ -64,43 +61,21 @@ Make sure you have the following installed:
 
 3. Install dependencies for the backend:
    ```bash
-   cd backend
    npm install
    ```
-
-4. Install dependencies for the frontend:
-   ```bash
-   cd ../frontend
-   npm install
-   ```
-
+   
 ### 3️⃣ Run the Application:
-1. Start the backend server:
+1. Start the mongodb server:
    ```bash
-   cd backend
-   npm start
+   mongod
    ```
 
 2. Start the frontend server:
    ```bash
-   cd ../frontend
-   npm start
+   nodemon/node index.js
    ```
 
-3. Open your browser and navigate to `http://localhost:3000`.
-
----
-
-## 📂 Project Structure
-
-```
-.
-├── backend        # Server-side code
-├── frontend       # Client-side code
-├── README.md      # Project documentation
-└── package.json   # Dependency management
-```
-
+3. Open your browser and navigate to `http://localhost:8080`.
 ---
 
 ## 🎥 Demo
