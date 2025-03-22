@@ -88,6 +88,11 @@ Make sure you have the following installed:
 
 ![Demo Pictures](IMG_20250323_042135.jpg)
 
+---
+
+![Demo Pictures](IMG_20250323_042135.jpg)
+
+
 ## 💡 Key Learnings
 - Building a full-stack application using the MERN stack.
 - Implementing both client-side and server-side validation.
