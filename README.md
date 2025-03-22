@@ -86,7 +86,7 @@ Make sure you have the following installed:
 
 ## Screenshots
 
-![Demo Pictures](IMG_20250323_042135.jpg)
+![Demo Pictures](IMG_20250323_042545.jpg)
 
 ---
 
