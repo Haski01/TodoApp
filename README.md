@@ -86,7 +86,7 @@ Make sure you have the following installed:
 
 ## Screenshots
 
-![Demo Pictures](Screenshot_20250323_041747.jpg)
+![Demo Pictures](IMG_20250323_042135.jpg)
 
 ## 💡 Key Learnings
 - Building a full-stack application using the MERN stack.
