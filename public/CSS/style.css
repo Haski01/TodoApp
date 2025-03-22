@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #153677, #4e085f);
+  padding: 10px;
+}
+
+.todo-app {
+  width: 100%;
+  max-width: 550px;
+  background: #fff;
+  margin: 50px auto 20px;
+  padding: 40px 30px 70px;
+  border-radius: 10px;
+}
+
+.todo-app h2 {
+  color: #002765;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.todo-app i {
+  font-size: larger;
+  margin-left: 10px;
+}
+
+.input-field {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #edeef0;
+  border-radius: 30px;
+  padding-left: 20px;
+  margin-bottom: 25px;
+}
+
+input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 10px;
+  font-size: 15px;
+}
+
+button {
+  border: none;
+  outline: none;
+  padding: 16px 50px;
+  background: #ff5945;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 40px;
+}
+
+ul li {
+  list-style: none;
+  font-size: 20px;
+  position: relative;
+  padding: 12px 8px 12px 25px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+ul li::before {
+  content: "○"; /* Default empty circle */
+  color: gray;
+  font-size: 40px;
+  position: absolute; /* Position it to the left */
+  left: 0; /* Align to the left */
+  top: 45%; /* Center vertically */
+  transform: translateY(-50%);
+}
+
+/* When completed, show filled green circle with tick */
+ul li.completed::before {
+  content: "✔"; /* Tick mark */
+  color: white;
+  background-color: green;
+  border-radius: 50%;
+  height: 20px;
+  display: inline-flex; /* Center align the tick */
+  align-items: center; /* Vertically center tick */
+  justify-content: center; /* Horizontally center tick */
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+ul li.completed {
+  text-decoration: line-through;
+  color: grey;
+}
+
+/* extra */
+span {
+  display: flex;
+  gap: 5px;
+}
+
+.edtbtn {
+  background-color: green;
+  padding: 5px;
+}
+.dltbtn {
+  background-color: red;
+  padding: 5px;
+}

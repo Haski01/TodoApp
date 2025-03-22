@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo App</title>
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="todo-app">
+        <h2>To-Do List <i class="fa-solid fa-receipt"></i></h2>
+
+        <form action="/todos" method="post">
+          <div class="input-field">
+            <input
+              type="text"
+              placeholder="enter your todo"
+              name="todo"
+              id="input-box"
+              required
+            />
+            <button onclick="addTask()">Add</button>
+          </div>
+        </form>
+
+        <ul class="todoList">
+          <%for(todo of todos){%>
+          <li><%=todo.task%></li>
+
+          <span>
+            <form method="get" action="/todos/<%=todo.id%>/edit">
+              <button class="edtbtn">
+                <i class="fa-solid fa-pen-to-square" type="button"></i>
+              </button>
+            </form>
+
+            <form method="post" action="/todos/<%=todo.id%>?_method=DELETE">
+              <button class="dltbtn"><i class="fa-solid fa-trash"></i></button>
+            </form>
+          </span>
+          <hr />
+
+          <%}%>
+        </ul>
+      </div>
+    </div>
+
+    <script src="../JS/script.js"></script>
+  </body>
+</html>
