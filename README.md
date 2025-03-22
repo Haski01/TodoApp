@@ -80,7 +80,7 @@ Make sure you have the following installed:
 
 ## 🎥 Demo
 
-![Demo Animation](https://media.giphy.com/media/3oriO0OEd9QIDdllqo/giphy.gif)
+![Demo Animation](video_20250322_165933.mp4)
 
 ---
 
